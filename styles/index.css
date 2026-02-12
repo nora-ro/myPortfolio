@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+    padding: 0%;
+
+}
+body{
+  background-image:url("../media/backHero.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position:center ;
+    background-size: cover;
+    text-transform: capitalize;
+   
+}
+
+
+ a{
+    text-decoration: none;
+    color:white;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 1.2rem;
+}
+.logo{
+    font-size: 40px;
+    color: #3d0a0a;
+    font-weight: bold;
+    text-shadow:  #9e0d0d 2px 2px 4px;
+}
+
+#toggler,label{
+    display: none;
+}
+
+header{
+    background-color:black;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    width: 100%;
+    height: 80px;
+    padding: 0 20px; 
+    align-items: center;
+    color: white;
+    position: fixed;
+}
+
+.hero{
+    width:100%;
+    height: 100vh;
+    color: white;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ 
+
+}
+
+button{
+    background-color: #240404;
+    border-radius: 14px;
+    padding: 12px 25px;
+    color: rgb(6, 4, 4);
+    border: none;
+    cursor: pointer;
+    
+}
+button a{
+    font-size: 1rem;
+}
+
+/*#btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+ h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-shadow: #3f0303 2px 2px 4px;
+}
+p{
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-shadow: #3a0606 2px 2px 4px;
+}
+h2{
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-shadow: #683b3b 2px 2px 4px;
+}
+
+button:hover{
+    background-color: #500303;
+    transition: background-color 0.5s ;
+}
+header a:hover{
+    color: #5a0404;
+    transition: color 0.5s ;
+
+}
+
+
+
+
+
+
+
