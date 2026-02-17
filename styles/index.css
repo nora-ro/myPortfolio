@@ -12,7 +12,17 @@ body{
     background-position:center ;
     background-size: cover;
     text-transform: capitalize;
+}
+
+.layer{
+    background-color:rgb(225, 210, 210);
+    opacity: 0.4;
    
+
+}
+
+.hero{
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 
@@ -24,10 +34,10 @@ body{
     font-size: 1.2rem;
 }
 .logo{
-    font-size: 40px;
+    font-size: 35px;
     color: #3d0a0a;
-    font-weight: bold;
-    text-shadow:  #9e0d0d 2px 2px 4px;
+   
+    text-shadow:#e30c0c 2px 2px 4px;
 }
 
 #toggler,label{
@@ -45,6 +55,7 @@ header{
     align-items: center;
     color: white;
     position: fixed;
+    z-index: 1000;
 }
 
 .hero{
@@ -55,21 +66,23 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
- 
-
+    animation: fadeIn 2s ease;
+    z-index: -1;
 }
 
 button{
-    background-color: #240404;
+    background-color: #4c0303;
     border-radius: 14px;
     padding: 12px 25px;
-    color: rgb(6, 4, 4);
     border: none;
     cursor: pointer;
+    animation: slideIn 1s ease;
+    box-shadow: 0 4px 8px rgba(198, 174, 174, 0.2);
     
 }
 button a{
     font-size: 1rem;
+    color: #ec8888;
 }
 
 /*#btn{
@@ -90,22 +103,42 @@ p{
 h2{
     font-size: 25px;
     margin-bottom: 10px;
-    text-shadow: #683b3b 2px 2px 4px;
+    text-shadow: #6d2a2a 2px 2px 4px;
 }
 
 button:hover{
-    background-color: #500303;
-    transition: background-color 0.5s ;
+    background-color: #0b0c0e;
+    transition: background-color 0.5s;
 }
 header a:hover{
     color: #5a0404;
-    transition: color 0.5s ;
+    transition: color 0.5s ease-in-out; 
 
 }
+span{
+    color: #5a0404;
+}
+#home{
+    font-weight: bold;
+    text-decoration: underline;
+}
 
-
-
-
-
-
+@keyframes fadeIn {
+    from {
+        transition: opacity 2s ease;
+        opacity: 0;
+     }
+    to {
+        transition: opacity 2s ease;
+            opacity: 1;
+         }
+}
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+     }
+    to {
+         transform: translateX(0);
+         }
+}
 
