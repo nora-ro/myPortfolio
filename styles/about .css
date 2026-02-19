@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:monospace;
+    font-style:oblique;
     margin: 0;
     padding: 0;
     text-transform: capitalize;
@@ -16,37 +17,49 @@ html{
     scroll-behavior: smooth;
 }
 
+header i:hover{
+    color: rgb(69, 41, 249);
+    transform: scale(1.3);
+}
+
 .edu{
-    margin-top: 20px;
+    margin: 20px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;   
     padding: 20px;
-    animation: fadeIn 1s ease;
+    animation: slideIn 2s ease;
+    background-color: #141c45;
+    
+   
   
 }
 .edu ul{
-    list-style-type: none;
+    list-style-type:lower-greek;
 }
 .edu li{
     font-size: 18px;
+}
+.edu h2{
+    color: chocolate;
 }
 
 
 header{
     display: flex;
     justify-content: space-between;
-   align-items: flex-start; 
+    align-items: center; 
     padding: 20px;
     background-color: #0e1535;
     height: 60px;
     position: sticky;
     top: 0;
     z-index: 1000;
+   
 }
 .logo{
     font-size: 24px;
     font-weight: bold;
-    color: #ffffff;
+    color: #f38238;
     text-decoration: none;
     margin-right: 20px;
 }
@@ -66,6 +79,8 @@ header{
     border-radius: 4px;
     cursor: pointer;
     animation: slideIn 1s ease;
+    
+    
 }
 .btn a{
     color: #ffffff;
@@ -73,7 +88,7 @@ header{
 }
 
 .btn:hover{
-    background-color: #0056b3;
+    background-color: #b32a00;
     transition: background-color 0.3s ease;
 }
 .about{
@@ -82,18 +97,57 @@ header{
     display: flex;
     justify-content:space-around;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
     padding: 20px;
+    overflow: hidden;
+    flex-wrap: nowrap;
+   
+    margin-bottom: 55px;
 
 }
 .info{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 10px;
+    animation: fadeIn 3s ease;
+    width: 50%; 
+
+    width: 100%;
+
+}
+.main{
+    display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 20px;
-    animation: fadeIn 2s ease;
+    width: 100%;
+    margin: 5%;
+     padding: 20px;
+   
+   
 }
+.ibtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+     margin-top: 20px;
+     flex-direction: column;
+}
+
+.ibtn i{
+    font-size: 24px;
+    color: #3b88db;
+     cursor: pointer;
+    transition: color 0.3s ease;
+}
+.ibtn i:hover{
+    color: #e16538;
+}
+
 .pic{
     display: flex;
     justify-content: center;
@@ -103,11 +157,12 @@ header{
 
 .about img{
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
     height: auto;
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: slideIny 2s ease;
 
 
 }
@@ -131,36 +186,92 @@ header{
     gap: 20px;
    
 }
-.skills-list{
-    background-color: #141c45;
-    color: #ffffff;
-    padding: 10px 20px;
-    border-radius: 4px;
-    font-size: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
 
-    
-}
 
- .skills-list ul{
+ .skills-list { 
     
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 10px; 
+    width: 100%;
 
 }
-.skills-list ul li{
-    background-color: #141c45;
+.sills-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+   
+}
+
+
+#card{
+   background-color: #141c45;
     color: #ffffff;
     padding: 10px 20px;
-    border-radius: 4px;
+    border-radius: 10px;
     font-size: 16px;
+    width: 200px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+   
+    animation: slideIn 1s ease;
+    animation-timeline: view();
+    animation-range: entry  cover 40%;
 }
+ .skills-list span{
+    display: block;
+    margin: 5px ;
+    border: #0056b3 solid 1px;
+    border-radius: 15px;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    
+   
+}
+#card:hover{
+    
+    transform: scale(1.05);
+        transition: transform 0.3s ease;
+        box-shadow: #0056b3 0px 8px 16px;
+}
+img:hover{
+    transition: transform 0.3s ease;
+    box-shadow: #0056b3 0px 8px 16px;
+}
+
+
+    .skills-header i{
+        font-size: 24px;
+        color: #3b88db;
+        animation: fadeIn 2s ease;
+    }
+
+    .skills-list:has(#card:hover)> #card:not(:hover) {
+     opacity: 0.5;
+     transform: scale(0.95);
+     transition: opacity 0.3s ease, transform 0.3s ease;
+      
+
+    }
+
+    .icons i{
+        font-size: 24px;
+        color: #3b88db;
+        margin: 0 10px;
+        transition: color 0.3s ease;
+    }
+        
+    
+        
+
 
 @keyframes fadeIn {
     from {
@@ -178,6 +289,15 @@ header{
      }
     to {
          transform: translateX(0);
+         }
+}
+
+@keyframes slideIny {
+    from {
+        transform: translateY(-100%);
+     }
+    to {
+         transform: translateY(0);
          }
 }
 

@@ -1,12 +1,12 @@
 *{
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: cursive, Helvetica, sans-serif;
     margin: 0%;
     padding: 0%;
 
 }
 body{
-  background-image:url("../media/backHero.jpg");
+  background-image: url("../media/back.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position:center ;
@@ -35,9 +35,10 @@ body{
 }
 .logo{
     font-size: 35px;
-    color: #3d0a0a;
+    color: #0d0a3d;
    
-    text-shadow:#e30c0c 2px 2px 4px;
+    text-shadow:#0c5ee3 2px 2px 4px;
+    font-style: italic;
 }
 
 #toggler,label{
@@ -71,18 +72,23 @@ header{
 }
 
 button{
-    background-color: #4c0303;
+    background-color: #05034c;
     border-radius: 14px;
     padding: 12px 25px;
     border: none;
     cursor: pointer;
     animation: slideIn 1s ease;
-    box-shadow: 0 4px 8px rgba(198, 174, 174, 0.2);
+    box-shadow: 0 4px 8px rgba(221, 221, 230, 0.2);
     
 }
 button a{
     font-size: 1rem;
-    color: #ec8888;
+    color: #8899ec;
+}
+ #btn button a:hover{
+   
+    color: #f6efec;
+     transition: color 0.5s;
 }
 
 /*#btn{
@@ -93,30 +99,31 @@ button a{
  h1{
     font-size: 50px;
     margin-bottom: 20px;
-    text-shadow: #3f0303 2px 2px 4px;
+    text-shadow: #0f033f 2px 2px 4px;
 }
 p{
     font-size: 20px;
     margin-bottom: 30px;
-    text-shadow: #3a0606 2px 2px 4px;
+    text-shadow: #0d063a 2px 2px 4px;
 }
 h2{
     font-size: 25px;
     margin-bottom: 10px;
-    text-shadow: #6d2a2a 2px 2px 4px;
+    text-shadow: #312a6d 2px 2px 4px;
 }
 
 button:hover{
-    background-color: #0b0c0e;
+    background-color: #e76127;
+    color: white;
     transition: background-color 0.5s;
 }
 header a:hover{
-    color: #5a0404;
+    color: #19058c;
     transition: color 0.5s ease-in-out; 
 
 }
 span{
-    color: #5a0404;
+    color: #1d0788;
 }
 #home{
     font-weight: bold;
