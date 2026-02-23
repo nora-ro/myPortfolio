@@ -1,12 +1,19 @@
 
 
 body{
-    background-color: #0e1535;
+  background-color: #0e1535;
+ /* background-image: url("../media/projback.jpeg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position:center ;
+    background-size: cover;
+    */
     color: #ffffff;
     line-height: 1.6;
     overflow-x: hidden;
     overflow-y: auto;
 }
+
 a{
 
     text-decoration: none;
@@ -42,21 +49,25 @@ header i:hover{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 3%;
-    width: 100%;
+    margin: 2%;
     height: 100vh;
+
+   
 }
 
 .project-item {
-   
-    border-radius: 8px;
-    overflow: hidden;
-       
+    width: 30%;
+    border-radius: 8px; 
     transition: transform 0.3s ease;
     background-color: #141c45;
     padding: 3%;
-    width: 100%;
-    max-width: 600px;
+    text-align: center;
+    width: 400px;
+   
+}
+.projects img{
+    width: 250px;
+
 }
 
 .project-item:hover {
@@ -70,13 +81,15 @@ header i:hover{
     align-items: center;
     gap: 40px;
     margin: 4%;
-    width: 100%;
+  
+   
 }
 
 .project-item h2{
     font-size: 24px;
     margin-bottom: 10px;
-   color: #5438e1;
+    color: #5438e1;
+    width: 100%;
 }
 
 .project-item p{
@@ -90,6 +103,7 @@ header i:hover{
     color: #e16538;
     text-decoration: none;
     font-style: italic;
+    margin-right: 20px;
  }   
 
  #card1{
@@ -167,3 +181,7 @@ header i:hover{
         
         
     }
+
+#end{
+    padding: 50px;
+}
