@@ -261,7 +261,7 @@ img:hover{
 
     }
 
-    .icons i{
+    .contact ul li i{
         font-size: 24px;
         color: #3b88db;
         margin: 0 10px;
@@ -322,7 +322,7 @@ img:hover{
     gap: 20px;
     width: 100%;
     height: 100%;  
-    padding: 50px;
+    padding: 20px;
     background-color: #141c45;
     margin: 6%;
      border-radius: 8px;
@@ -423,16 +423,17 @@ img:hover{
 
     }
 
-.ibtn i{
+.ibtn ,ul  i {
     font-size: 20px;
 }  
 .skills {
     margin: 50px 0 ;
 } 
 .contact h2{
-        font-size: 12px;
+        font-size: 15px;
         margin-bottom: 10px;
         text-align: center;
+        display: none;
     }
 
     .contact a{
@@ -444,6 +445,11 @@ img:hover{
         font-size: 10px;
        
     }
+    #cenh{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 10px;
+    }
        
     }
 
@@ -453,9 +459,6 @@ img:hover{
     .about h1{
     font-size: 1.5rem;
     margin-bottom: 10px;
-}
-img{
-    display: none;
 }
     .about p{
     font-size: 10px;
@@ -512,20 +515,20 @@ img{
 .skills {
     margin: 50px 0 ;
 } 
-.contact h2{
+.contact .head h2{
         font-size: 16px;
         margin-bottom: 10px;
         text-align: center;
     }
 
     .contact a{
-        font-size: 16px;
+        font-size: 10px;
         margin: 5px;
     }
  
-    .icons i{
+    .contact ul li i{
         font-size: 16px;
-        padding: 3;
+        padding: 3px;
     }
     
     .contact ul{
@@ -534,7 +537,7 @@ img{
      
     }
   .head{
-    display: none;
+    display: block;
 
   }
   

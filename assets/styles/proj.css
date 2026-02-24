@@ -183,5 +183,23 @@ header i:hover{
     }
 
 #end{
-    padding: 50px;
+    padding: 40px;
 }
+
+@media (max-width: 600px){
+    .projects{
+        flex-direction: column;
+        height: auto;
+    }
+    .project-item{
+        width: 80%;
+        width: 300px;
+    }
+    .project-item img{
+        width: 100%;
+        width: 200px;
+    }
+
+
+}
+
