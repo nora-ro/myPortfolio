@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    font-family: cursive, Helvetica, sans-serif;
+    font-family:  sans-serif;
     margin: 0%;
     padding: 0%;
 
@@ -14,16 +14,14 @@ body{
     text-transform: capitalize;
 }
 
-.layer{
+/*.layer{
     background-color:rgb(225, 210, 210);
     opacity: 0.4;
    
 
-}
+}*/
 
-.hero{
-    background-color: rgba(0, 0, 0, 0.5);
-}
+
 
 
  a{
