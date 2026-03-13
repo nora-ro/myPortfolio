@@ -8,116 +8,222 @@
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-        <header>
-            <div class="header-left">
-                <a href="#" class="logo">Noro</a>
-                <a href="index.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
-            </div>
-         </header>
-     
-    <div class="about">
-        
-        
-    <div class="info">
-        <div class="main">
-            <h1>Hello, I'm Nora Roshdy <span class="highlight">Web Developer</span></h1>
-            <p> a passionate web developer with a strong background in computer science.
-             I specialize in creating responsive and user-friendly websites using HTML, CSS, and JavaScript, react js. 
-            With experience in  front-end development, I enjoy building dynamic web applications that
-             provide seamless user experiences. I'm always eager to learn new technologies
-              and take on challenging projects to further enhance my skills.</p>
-            <div class="ibtn">
-         <button class="btn"><a href="proj.html">view projects</a></button>
-               
-           <div class="icons">
-            <i class="fa-solid fa-envelope"></i>
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-github"></i>
-
-           </div>
-            </div>
-          
-        </div>
-           
-              
+ <header class="main-header">
+    <div class="logo">
+        <div class="logo-circle">N</div>
     </div>
-             <div class="pic">
-           <img src="assets/media/about.jpg" alt="Profile Picture">
-              </div>
-        
-        
-    </div> 
 
-      
-       <div class="edu" id="education">
-         <h2>Education</h2>
-
+    <nav class="nav-menu">
         <ul>
-            <li>Bachelor's Degree in Computer Science - Benha University.  (2023-2027)</li>
-            <li>Front end developer (React) Scholarship 
-                DigitalEgypt Pioneers Initiative (DEPI)</li>
+            <li><a href="index.html">Intro</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="about.html#skills">Skills</a></li>
+            <li><a href="proj.html">Projects</a></li>
+            <li><a href="about.html#contact">Contact</a></li>
         </ul>
-         
-    </div>   
+    </nav>
+
+    <div class="social-links">
+        <a href="https://github.com/nora-ro" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/nora-roshdy" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+</header>
+     
+ <section class="about-section" id="about-section">
+    <div class="container">
+        <div class="card about-card">
+            <h2 class="title" id="about-t">About Me</h2>
+            <div class="line"></div>
+            <p>
+                I'm a web developer with a strong foundation in Computer Science.
+                 I specialize in creating responsive and user-friendly websites using HTML,
+                  CSS, JavaScript, and React. I'm passionate about building dynamic web applications that provide seamless
+                   user experiences and love taking on challenging projects to enhance my skills.
+            </p>
+            
+            <div class="footer-info">
+                <div class="icon-box">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <div>
+                    <span class="uni-name">Computer Science</span>
+                    <span class="uni-sub">Benha University</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card edu-card">
+            <h2 class="title"><i class="fa-solid fa-graduation-cap"></i> Education Journey</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item right">
+                    <div class="dot active"></div>
+                    <div class="content-box">
+                        <span class="date">2023 - 2027</span>
+                        <h3>Bachelor's Degree</h3>
+                        <p>Computer Science - Benha University</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item left">
+                    <div class="dot"></div>
+                    <div class="content-box">
+                        <span class="label">Scholarship</span>
+                        <h3>Front End Developer</h3>
+                        <p>DigitalEgypt Pioneers Initiative (DEPI)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>  
    
     
          
 
   
-<div class="skills-section">
-    <div class="skills">
-       <div class="skills-header">
-        <i class="fa-solid fa-code"></i>
+<section class="skills-section" id="skills">
+    <div class="container">
+        <div class="skills-header">
+            <h2>What I <span>Offer</span></h2>
+            <p>A complete toolkit of modern technologies and practices to deliver robust, scalable, and beautiful web solutions.</p>
         </div>
-        <h2>Skills&technologies</h2>
-      </div>
 
         <div class="skills-list">
-       
-            <div class="skill_card" id="card"><span>html</span> <span>javascript</span><span>css</span></div>      
-            <div class="skill_card" id="card"><span>React JS</span></div> 
-            <div class="skill_card" id="card"><span>Responsive Web Design</span></div>
-            <div class="skill_card" id="card"><span>Git and Version Control</span></div>
-            <div class="skill_card" id="card"><span>Python</span></div>
-            <div class="skill_card" id="card"><span>SQL</span></div>
-           
-     
+            
+            <div class="skill-card">
+                <div class="card-top">
+                    <div class="card-icon"><i class="fa-solid fa-code"></i></div>
+                    <div class="card-info">
+                        <h3>React JS</h3>
+                        <p>Component architecture, hooks, state management</p>
+                    </div>
+                </div>
+                <div class="card-bottom">
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                    <span class="percentage">90%</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="card-top">
+                    <div class="card-icon"><i class="fa-solid fa-layer-group"></i></div>
+                    <div class="card-info">
+                        <h3>HTML/CSS/JS</h3>
+                        <p>Semantic HTML, modern CSS, vanilla JS</p>
+                    </div>
+                </div>
+                <div class="card-bottom">
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 95%;"></div>
+                    </div>
+                    <span class="percentage">95%</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="card-top">
+                    <div class="card-icon"><i class="fa-solid fa-laptop"></i></div>
+                    <div class="card-info">
+                        <h3>Responsive Design</h3>
+                        <p>Mobile-first approach, media queries</p>
+                    </div>
+                </div>
+                <div class="card-bottom">
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 85%;"></div>
+                    </div>
+                    <span class="percentage">85%</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="card-top">
+                    <div class="card-icon"><i class="fa-solid fa-terminal"></i></div>
+                    <div class="card-info">
+                        <h3>Python</h3>
+                        <p>Scripting, automation, basics</p>
+                    </div>
+                </div>
+                <div class="card-bottom">
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 70%;"></div>
+                    </div>
+                    <span class="percentage">70%</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="card-top">
+                    <div class="card-icon"><i class="fa-solid fa-database"></i></div>
+                    <div class="card-info">
+                        <h3>SQL</h3>
+                        <p>Database design, queries, relationships</p>
+                    </div>
+                </div>
+                <div class="card-bottom">
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 75%;"></div>
+                    </div>
+                    <span class="percentage">75%</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="card-top">
+                    <div class="card-icon"><i class="fa-brands fa-github"></i></div>
+                    <div class="card-info">
+                        <h3>Git & Version Control</h3>
+                        <p>Collaboration, branching, workflows</p>
+                    </div>
+                </div>
+                <div class="card-bottom">
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 80%;"></div>
+                    </div>
+                    <span class="percentage">80%</span>
+                </div>
+            </div>
+
         </div>
     </div>
-   
+</section>
+ 
+ <!--       
 
-    
-<div class="contact" id="contact">
-   
-        <div class="outer">   
-        <div class="head"><h2>do you have any questions?</h2></div>
+ -->  
+<section class="contact-section" id="contact">
+    <div class="container">
+        <div class="contact-card">
+            
+            <div class="contact-header">
+                <h2>Do you have any <span>questions?</span></h2>
+                <p>
+                    If you'd like to get in touch, feel free to ask me anything or 
+                    reach out via email or connect with me on LinkedIn.
+                </p>
+            </div>
 
-        <div class="info">
-            <h2 id="cenh">do you have any questions?</h2>
-            <p>If you'd like to get in touch, feel free to ask me anything or 
-             reach out via email or connect with me on LinkedIn.</p>
-           <ul>
-              <!--<li><i class="fa-solid fa-envelope"></i><a href="mailto:n14930070@gmail.com" target="_blank">nora.roshdy@gmail.com</a></li>-->
-              <li><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/nora-roshdy" target="_blank">LinkedIn Profile</a></li>
-              <li><i class="fa-brands fa-github"></i><a href="https://github.com/nora-ro" target="_blank">GitHub Profile</a></li>
-                
-          </ul>
-
-           
+            <div class="contact-actions">
+                <a href="mailto:nora.roshdy@gmail.com" target="_blank" class="contact-btn">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>nora.roshdy@gmail.com</span>
+                </a>
+                <a href="https://www.linkedin.com/in/nora-roshdy" target="_blank" class="contact-btn">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>LinkedIn Profile</span>
+                </a>
+                <a href="https://github.com/nora-ro" target="_blank" class="contact-btn">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub Profile</span>
+                </a>
+            </div>
 
         </div>
-       
-     </div>
-  </div>
-    
-
-        
-
-    
-   
-
-
-
-
+    </div>
+</section>
+  
 </body>
 </html>
